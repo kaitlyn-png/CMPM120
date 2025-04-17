@@ -1,5 +1,5 @@
-CMPM120 Assignments
-Section
-- BuildAMonster
-Lecture
-Homework
+# CMPM120 Assignments
+## Homework
+## Lecture
+## Section
+-- BuildAMonster
