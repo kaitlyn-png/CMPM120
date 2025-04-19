@@ -1,0 +1,28 @@
+body {
+    font-family: Monospace, Monaco;
+    background-color: #b4a9c6;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    color: #333;
+    font-family: Monospace, Monaco;
+    background-color: #f8dae9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:active {
+    
+    color: #fff;
+}

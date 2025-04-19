@@ -1,0 +1,362 @@
+{
+    "Title": "What is My Cat Doing",
+    "Credits": "Created by Kaitlyn Eng.",
+    "InitialLocation": "Bed1",
+    "Locations": {
+        "Bed1": {
+            "Body": "Meow meow..meow meow...",
+            "Choices": [                
+                {
+                    "Text": "Poke the human",
+                    "Target": "Poke"
+                },
+                {
+                    "Text": "Jump off the bed",
+                    "Target": "Bedroom"
+                }
+            ]
+        },
+        "Bed": {
+            "Body": "There is a human on the bed. Hungry.",
+            "Choices": [                
+                {
+                    "Text": "Poke the human",
+                    "Target": "Poke" 
+                },
+                {
+                    "Text": "Jump off the bed",
+                    "Target": "Bedroom"
+                }
+            ]
+        },
+        "Bedroom": {
+            "Body": "The bedroom, this is where the human spends all day in. <br> There is a hat missing. <br> Hungry.",
+            "Choices": [
+                {
+                    "Text": "Jump back on the bed",
+                    "Target": "Bed"
+                },                
+                {
+                    "Text": "Go into hallway",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Poke": {
+            "Body": "Poke poke poke. The human is not waking up.",
+            "Choices": [                
+                {
+                    "Text": "Poke the human",
+                    "Target": "Poke"
+                },
+                {
+                    "Text": "Jump off the bed",
+                    "Target": "Bedroom"
+                }
+            ]
+        },
+        "Hallway": {
+            "Body": "This is the hallway, meow meow meow. <br> Hungry.",
+            "Choices": [
+                {
+                    "Text": "Go into bedroom",
+                    "Target": "Bedroom"
+
+                },
+                {
+                    "Text": "Use literbox",
+                    "Target": "Literbox",
+                    "ActionCompleted": "UsedLiterbox"
+                },
+                {
+                    "Text": "Go into bathroom",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "Go into kitchen",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Literbox": {
+            "Body": "psss psss pssssss",
+            "Choices": [
+                {
+                    "Text": "Go to hallway",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "This is the bathroom, the human literbox.",
+            "Choices": [                
+                {
+                    "Text": "Go to hallway",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Knock over toothbrush",
+                    "Target": "KnockOverToothbrush",
+                    "ActionCompleted": "KnockedOverToothbrush"
+                }
+            ]
+        },
+        "KnockOverToothbrush": {
+            "Body": "The toothbrush is on the floor now.",
+            "Choices": [
+                {
+                    "Text": "Go to hallway",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Knock over another toothbrush",
+                    "Target": "KnockOverToothbrush",
+                    "ActionCompleted": "KnockedOverAnotherToothbrush"
+                }
+            ]
+        },
+        "Kitchen": {
+                "Body": "The kitchen, the human's food is here. Hungry.",
+                "Choices": [
+                    {
+                        "Text": "Go to hallway",
+                        "Target": "Hallway"
+                    },
+                    {
+                        "Text": "Look at foodbowl",
+                        "Target": "Foodbowl"
+                    },
+                    {
+                        "Text": "Go to porch",
+                        "Target": "Porch"
+                    }
+                ]
+        },
+        "Foodbowl": {
+            "Body": "There's no food in the bowl.",
+            "Choices": [
+                {
+                    "Text": "Go to kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Meow for food",
+                    "Target": "MeowForFood"
+                }
+            ]
+        },
+        "MeowForFood": {
+            "Body": "Meow meow meow meow meow meow meow meow. <br> No one is coming.",
+            "Choices": [
+                {
+                    "Text": "Go to kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Meow for food",
+                    "Target": "MeowForFood"
+                }
+            ]
+        },
+        "Porch": {
+            "Body": "The porch, it is a nice day outside. Hungry.",
+            "Choices": [
+                {
+                    "Text": "Go back inside, into the kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Go into the garden",
+                    "Target": "Garden"
+                }
+            ]
+        },
+        "Garden": {
+            "Body": "There's pretty flowers here. <br> So hungry. <br> Is there food over this bridge.",
+            "Choices": [
+                {
+                    "Text": "Go back inside, into the kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Go over the bridge",
+                    "Target": "Bridge"
+                }
+            ]
+        },
+        "Bridge": {
+            "Body": "<i> As you cross the bridge, a mist envelops you. <br> You feel a strange sensation, like you are being watched. <br> You look around, but there is no one there. </i> <br> <br> <b> You are now in the other world. </b>",
+            "Choices": [
+                {
+                    "Text": "Carry on...",
+                    "Target": "Otherworld"
+                }
+            ]
+        },
+        "Otherworld": {
+            "Body": "<i> You are in a strange place. <br> The sky is a different color, and the ground is soft and squishy. <br> You see a meadow and a cottage in the distance. </i>",
+            "Choices": [
+                {
+                    "Text": "Go back to the bridge",
+                    "Target": "BridgeLocked"
+                },
+                {
+                    "Text": "Go towards the meadow",
+                    "Target": "Meadow"                
+                },
+                {
+                    "Text": "Go towards the cottage",
+                    "Target": "Cottage"
+                }
+            ]
+        },
+        "BridgeLocked": {
+            "Body": "<i> The bridge is gone. <br> You cannot go back. </i>",
+            "Choices": [
+                {
+                    "Text": "Go towards the meadow",
+                    "Target": "Meadow"                
+                },
+                {
+                    "Text": "Go towards the cottage",
+                    "Target": "Cottage"
+                }
+            ]
+        },
+        "Meadow": {
+            "Body": "<i> You are in a meadow. <br> There are flowers everywhere, and the sky is a beautiful shade of...purple. <br> You could run around in the grass forever. </i>",
+            "Choices": [
+                {
+                    "Text": "Leave the meadow",
+                    "Target": "Otherworld"
+                }
+            ]
+        },
+        "Cottage": {
+            "Body": "<i> You are in a cottage. <br> There is a fire in the fireplace, and the smell of food fills the air. <br> You see a table with a feast laid out. <br> On the other side of the table there's a hat. </i>",
+            "Choices": [
+                {
+                    "Text": "Eat the food",
+                    "Target": "EatFood",
+                    "ActionCompleted": "FoodEaten"
+                },
+                {
+                    "Text": "Take the hat",
+                    "Target": "TakeHat",
+                    "GivesObject": "Hat",
+                    "ActionCompleted": "HatTaken"
+                },
+                {
+                    "Text": "Leave the cottage",
+                    "Target": "OtherworldUnlocked",
+                    "RequiresObject": "Hat"
+                }
+            ]
+        },
+        "EatFood": {
+            "Body": "<i> You eat the food. It is delicious. You feel full and happy. You could stay here forever. <br> But..... <br> <br> You miss the human... </i>",
+            "Choices": [
+                {
+                    "Text": "Grab the hat",
+                    "Target": "TakeHat",
+                    "GivesObject": "Hat",
+                    "ActionCompleted": "HatTaken"
+                },
+                {
+                    "Text": "Leave the cottage",
+                    "Target": "OtherworldUnlocked",
+                    "RequiresObject": "Hat"
+                }
+            ]
+        },
+        "TakeHat": {
+            "Body": "<i> You take the hat. It is a nice hat. You feel happy. You miss the human... Maybe it's time to go back. </i>",
+            "Choices": [
+                {
+                    "Text": "Eat the food",
+                    "Target": "EatFood",
+                    "ActionCompleted": "FoodEaten"
+                },
+                {
+                    "Text": "Leave the cottage",
+                    "Target": "OtherworldUnlocked"
+                }
+            ]
+        }, 
+        "OtherworldUnlocked": {
+            "Body": "<i> You are back outside in the Otherworld. The sky is a shade of pink. The wind brushes against your fur and the pollen tickles your nose. You will miss this. But you miss your human more. </i>",
+            "Choices": [
+                {
+                    "Text": "Go back to the bridge",
+                    "Target": "BridgeUnlocked"
+                }
+            ]
+        },
+        "BridgeUnlocked": {
+            "Body": "<i> The bridge is back. <br> You can go back. </i>",
+            "Choices": [
+                {
+                    "Text": "Cross over...",
+                    "Target": "Garden2"
+                }
+            ]
+        },
+        "Garden2": {
+            "Body": " <b> You are now in the Overworld. </b> <br> Meow meow meow meow meow.",  
+            "Choices": [
+                {
+                    "Text": "Go back inside, into the kitchen",
+                    "Target": "Kitchen2"
+                }
+            ]
+        },
+        "Kitchen2": {
+            "Body": "Meow meow meow",
+            "Choices": [
+                {
+                    "Text": "Go to the hallway",
+                    "Target": "Hallway2"
+                }
+            ]
+        },
+        "Hallway2": {
+            "Body": "Meow meow meow",
+            "Choices": [
+                {
+                    "Text": "Go to the bedroom",
+                    "Target": "Bedroom2"
+                }
+            ]
+        },
+        "Bedroom2": {
+            "Body": "Meow meow meow",
+            "Choices": [
+                {
+                    "Text": "Jump on the bed",
+                    "Target": "Bed2"
+                }
+            ]
+        },
+        "Bed2": {
+            "Body": "Meow meow meow",
+            "Choices": [
+                {
+                    "Text": "Poke the human",
+                    "Target": "Poke2"
+                }
+            ]
+        },
+        "Poke2": {
+            "Body": "<i> The human opens their eyes and looks at you. You have the hat in your mouth. <br> 'Oh you found my hat', they say as they grab it from you, giving you a pat on the head.</i> <br> <br> <b> You are back home. </b>",
+            "Choices": [
+                {
+                    "Text": "The End",
+                    "Target": "End"
+                }
+            ]
+        },
+        "End":{
+            "Body": "I'm hungry."
+        }
+    }
+}
